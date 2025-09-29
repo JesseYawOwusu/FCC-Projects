@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JS Tech Docs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <header>JS Docs</header>
+  <a class="nav-link" href="#Intro_to_JS">Intro to JS</a>
+  <a class="nav-link" href="#Variables_and_Types">Variables and Types</a>
+  <a class="nav-link" href="#Functions">Functions</a>
+  <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+  <a class="nav-link" href="#Asynchronous_JS">Asynchronous JS</a>
+</nav>
+
+<main id="main-doc">
+
+  <section class="main-section" id="Intro_to_JS">
+    <header>Intro to JS</header>
+    <p>JavaScript is a programming language that runs in the browser and on servers (node).</p>
+    <p>It lets you change pages, respond to user actions, and talk to servers.</p>
+    <code>console.log('hello world');</code>
+    <ul>
+      <li>Runs in browser</li>
+      <li>Event-driven</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Variables_and_Types">
+    <header>Variables and Types</header>
+    <p>Variables hold values. Use let/const/var (prefer let/const).</p>
+    <p>JavaScript has types like string, number, boolean, object and null/undefined.</p>
+    <code>let name = "Jesse"; const age = 30;</code>
+    <ul>
+      <li>string</li>
+      <li>number</li>
+      <li>boolean</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <p>Functions are reusable blocks of code. They take params and return values.</p>
+    <p>You can write function declarations or arrow functions.</p>
+    <code>function add(a,b){ return a+b }</code>
+    <code>const sub = (a,b) => a-b</code>
+    <ul>
+      <li>declaration</li>
+      <li>expression</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="DOM_Manipulation">
+    <header>DOM Manipulation</header>
+    <p>The DOM is the page structure. JS can read and change it with selectors.</p>
+    <p>Common methods: querySelector, addEventListener, createElement, appendChild.</p>
+    <code>document.querySelector('#id')</code>
+    <code>el.addEventListener('click', fn)</code>
+    <ul>
+      <li>querySelector</li>
+      <li>addEventListener</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Asynchronous_JS">
+    <header>Asynchronous JS</header>
+    <p>Async code lets you wait for things (like network requests) without blocking UI.</p>
+    <p>Promises, async/await, and callbacks are the usual patterns.</p>
+    <code>fetch(url).then(r=>r.json())</code>
+    <code>async function f(){ await fetch(url) }</code>
+    <ul>
+      <li>callback</li>
+      <li>promise</li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>

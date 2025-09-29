@@ -1,0 +1,36 @@
+
+body{
+  font-family: sans-serif;
+  padding:20px;
+  background: linear-gradient(to right,#f3f6fb,#ffffff);
+}
+
+#main{
+  max-width:700px;
+  margin:30px auto;
+padding:10px;}
+
+#img-div{
+  text-align:center; 
+ margin: 10px 0 20px;}
+
+#image{
+  display:block;
+ max-width:100%;
+height:auto;
+margin: 0 auto;}
+
+#img-caption{
+  font-size:0.9rem;
+  margin-top:6px;
+  color:#444;}
+
+#tribute-info{
+  margin-top:14px;
+  line-height:1.4;}
+
+#tribute-link{
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:underline;
+  color:#0366d6;}

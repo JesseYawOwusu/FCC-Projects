@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+
+  <body>
+    <main>  
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a certification project</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required><br><br>
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required><br><br>
+         <label id="number-label" for="number">Number:</label>
+        <input id="number" type="number" placeholder="Enter your number" min="0" max="9999999999" required><br><br>
+        
+        <label for="dropdown">Pick your favourite colour</label><br>
+        <select id="dropdown" required>
+          <option value="blue">Blue</option>
+          <option value="gold">Gold</option>
+        </select><br><br>
+        <label>Pick one:</label><br>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="choice" value="jollof" required> Jollof
+          </label>
+          <label>
+            <input type="radio" name="choice" value="waakye" required> Waakye
+          </label>
+        </div><br><br>
+        
+        <label>Which sauce do you like?</label><br>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="sauce" value="shito"> Shito
+          </label>
+         <label>
+            <input type="checkbox" name="sauce" value="stew"> Stew
+          </label>
+        </div><br><br>
+        
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments here..."></textarea><br><br>
+        
+        <button id="submit" type="submit">Submit</button>
+
+      </form> 
+
+
+    </main>
+  </body>
+</html>
